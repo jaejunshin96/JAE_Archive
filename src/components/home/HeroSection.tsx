@@ -24,7 +24,7 @@ export default function HeroSection() {
         transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
         className="font-mono text-xs text-muted tracking-widest text-right hidden sm:block pb-2"
       >
-        시각적 기록 — 2021–현재
+        구현된 디지털 시선 — 2021–현재
       </motion.p>
     </section>
   )
