@@ -3,7 +3,7 @@ import { Work } from '@/types'
 export const works: Work[] = [
   {
     slug: 'jangahn-tower',
-    title: '장안타워',
+    title: '(주)장안건설기계',
     titleEn: 'Jangahn Tower',
     year: 2026,
     category: 'Web Design',
@@ -21,6 +21,7 @@ export const works: Work[] = [
     aspectRatio: 'landscape',
     gridSize: 'wide',
     url: 'https://www.jangahntower.com/',
+    keywords: ['중장비', '신뢰', '기업'],
   },
   {
     slug: 'worholpass',
@@ -37,9 +38,10 @@ export const works: Work[] = [
       ko: '워킹홀리데이 비자 대행 서비스 플랫폼. 복잡한 절차를 단순하고 명확한 흐름으로 정리했다.',
       en: 'A working holiday visa service platform. Simplifying a complex process into a clear, navigable flow.',
     },
-    aspectRatio: 'portrait',
+    aspectRatio: 'landscape',
     gridSize: 'narrow',
     url: 'https://www.worholpass.com/',
+    keywords: ['이메일', '마케팅', '플로우'],
   },
   {
     slug: 'the-zen',
@@ -60,9 +62,10 @@ export const works: Work[] = [
       en: 'A meditation studio brand site. Stillness expressed through layout and negative space.',
     },
     sample: true,
-    aspectRatio: 'portrait',
-    gridSize: 'narrow',
+    aspectRatio: 'landscape',
+    gridSize: 'wide',
     url: 'https://project-zen-five.vercel.app/',
+    keywords: ['고요', '여백', '명상'],
   },
   {
     slug: 'four-bakery',
@@ -84,6 +87,7 @@ export const works: Work[] = [
     aspectRatio: 'landscape',
     gridSize: 'wide',
     url: 'https://project-kinetic.vercel.app/',
+    keywords: ['질감', '온기', '장인'],
   },
   {
     slug: 'studio-noir',
@@ -105,5 +109,6 @@ export const works: Work[] = [
     aspectRatio: 'landscape',
     gridSize: 'full',
     url: 'https://project-noir-six.vercel.app/',
+    keywords: ['다크', '브랜드', '에이전시'],
   },
 ]

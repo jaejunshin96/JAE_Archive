@@ -1,11 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { useLocale } from 'next-intl'
 import { motion, useScroll, useTransform, useMotionTemplate } from 'framer-motion'
 
 export default function Nav() {
-  const locale = useLocale()
   const { scrollY } = useScroll()
   const bgOpacity = useTransform(scrollY, [0, 80], [0, 0.92])
   const bgColor = useMotionTemplate`rgba(245, 244, 241, ${bgOpacity})`
@@ -17,10 +15,10 @@ export default function Nav() {
     >
       <nav className="px-6 py-5">
         <Link
-          href={`/${locale}`}
+          href="/"
           className="font-serif text-sm tracking-widest text-ink hover:text-muted transition-colors duration-200"
         >
-          JAE ARCHIVE
+          STUDIO ZORBA
         </Link>
       </nav>
     </motion.header>

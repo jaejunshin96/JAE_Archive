@@ -1,12 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
 import { fadeUp } from '@/lib/motion'
 
 export default function HeroSection() {
-  const t = useTranslations('hero')
-
   return (
     <section className="pt-36 pb-16 px-6 max-w-7xl mx-auto flex items-end justify-between">
       <motion.h1
@@ -17,7 +14,7 @@ export default function HeroSection() {
         className="font-serif text-ink leading-none"
         style={{ fontSize: 'clamp(2.5rem, 6vw, 5.5rem)' }}
       >
-        JAE ARCHIVE
+        STUDIO ZORBA
       </motion.h1>
 
       <motion.p
@@ -27,7 +24,7 @@ export default function HeroSection() {
         transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
         className="font-mono text-xs text-muted tracking-widest text-right hidden sm:block pb-2"
       >
-        {t('tagline')}
+        시각적 기록 — 2021–현재
       </motion.p>
     </section>
   )

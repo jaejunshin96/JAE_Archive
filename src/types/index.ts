@@ -14,4 +14,5 @@ export interface Work {
   gridSize: 'narrow' | 'wide' | 'full'
   coverPosition?: string
   url?: string
+  keywords?: string[]
 }

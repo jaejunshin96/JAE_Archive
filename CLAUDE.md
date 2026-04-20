@@ -1,4 +1,4 @@
-# CLAUDE.md - JAE Archive (Artist Version)
+# CLAUDE.md - Studio Zorba (Artist Version)
 
 📌 WHAT: 프로젝트 개요
 - [cite_start]성격: 오직 작업물의 퀄리티와 감각을 기록하는 아티스트 스타일 포트폴리오 아카이브[cite: 31].
