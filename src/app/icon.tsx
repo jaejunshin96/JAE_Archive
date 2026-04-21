@@ -7,19 +7,19 @@ export default function Icon() {
   return new ImageResponse(
     <div
       style={{
-        background: '#1A1917',
+        background: '#000000',
         width: '100%',
         height: '100%',
         display: 'flex',
         alignItems: 'center',
-        paddingBottom: 4,
+        paddingTop: 0,
         justifyContent: 'center',
         fontSize: 20,
-        color: '#F5F4F1',
+        color: '#FFFFFF',
         fontFamily: 'serif',
       }}
     >
-      J
+      Z
     </div>,
     { ...size }
   )
