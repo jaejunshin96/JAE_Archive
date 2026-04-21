@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'STUDIO ZORBA',
+  title: 'Rooviz',
   description: 'Visual Archive — Web Design & Development',
 }
 

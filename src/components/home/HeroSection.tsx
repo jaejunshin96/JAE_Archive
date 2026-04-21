@@ -14,7 +14,7 @@ export default function HeroSection() {
         className="font-serif text-ink leading-none"
         style={{ fontSize: 'clamp(2.5rem, 6vw, 5.5rem)' }}
       >
-        STUDIO ZORBA
+        ROOVIZ ARCHIVE
       </motion.h1>
 
       <motion.p

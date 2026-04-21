@@ -20,7 +20,7 @@ export default function Nav() {
           href="/"
           className="font-serif text-sm tracking-widest text-ink hover:text-muted transition-colors duration-200"
         >
-          STUDIO ZORBA
+          ROOVIZ
         </Link>
         <Link
           href="/price"
