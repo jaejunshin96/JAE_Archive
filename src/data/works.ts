@@ -41,7 +41,7 @@ export const works: Work[] = [
     aspectRatio: 'landscape',
     gridSize: 'narrow',
     url: 'https://www.worholpass.com/',
-    keywords: ['이메일', '마케팅', '플로우'],
+    keywords: ['이메일', '마케팅', '카카오톡'],
   },
   {
     slug: 'the-zen',
