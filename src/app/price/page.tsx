@@ -1,10 +1,14 @@
 import PageTransition from '@/components/ui/PageTransition'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
+const OPEN_EVENT_SLOTS = { total: 10, remaining: 9 }
+
 const tiers = [
   {
     name: 'BASIC',
-    price: '₩390,000',
+    price: '₩149,000',
+    originalPrice: '₩390,000',
+    eventNote: '오픈 이벤트 · 선착순 10개',
     items: [
       '1~5페이지 구성',
       '랜딩 · 메뉴판 수준',
@@ -16,6 +20,8 @@ const tiers = [
   {
     name: 'STANDARD',
     price: '₩790,000',
+    originalPrice: undefined,
+    eventNote: undefined,
     items: [
       '~10페이지 구성',
       '인사말 · 오시는 길',
@@ -27,6 +33,8 @@ const tiers = [
   {
     name: 'PREMIUM',
     price: '₩1,490,000',
+    originalPrice: undefined,
+    eventNote: undefined,
     items: [
       '20페이지 이상',
       '완전 맞춤형 제작',
@@ -64,20 +72,58 @@ export default function PricePage() {
                 tier.highlight
                   ? 'bg-[var(--color-ink)] text-[var(--color-bg)]'
                   : 'bg-[var(--color-bg)] text-[var(--color-ink)]',
+                tier.eventNote ? 'outline outline-2 outline-red-500 relative z-10' : '',
               ].join(' ')}
             >
-              <p
-                className={[
-                  'font-mono text-[10px] tracking-widest uppercase mb-6',
-                  tier.highlight
-                    ? 'text-[var(--color-bg)]/60'
-                    : 'text-[var(--color-ink-muted)]',
-                ].join(' ')}
-              >
-                {tier.name}
-              </p>
+              <div className="flex items-center gap-3 mb-3">
+                <p
+                  className={[
+                    'font-mono text-[10px] tracking-widest uppercase',
+                    tier.highlight
+                      ? 'text-[var(--color-bg)]/60'
+                      : 'text-[var(--color-ink-muted)]',
+                  ].join(' ')}
+                >
+                  {tier.name}
+                </p>
+                {tier.eventNote && (
+                  <div className="flex items-center gap-1.5 px-2 py-0.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                    <p className="font-mono text-[10px] tracking-widest uppercase text-red-500">
+                      {tier.eventNote}
+                    </p>
+                  </div>
+                )}
+              </div>
 
-              <p className="font-serif text-3xl mb-1">{tier.price}</p>
+              {tier.eventNote && (
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="flex gap-0.5">
+                    {Array.from({ length: OPEN_EVENT_SLOTS.total }).map((_, idx) => (
+                      <span
+                        key={idx}
+                        className={[
+                          'w-2 h-2',
+                          idx < OPEN_EVENT_SLOTS.remaining
+                            ? 'bg-red-500'
+                            : 'border border-red-500/40',
+                        ].join(' ')}
+                      />
+                    ))}
+                  </div>
+                  <p className="font-mono text-[10px] text-red-500">
+                    {OPEN_EVENT_SLOTS.remaining}/{OPEN_EVENT_SLOTS.total}
+                  </p>
+                </div>
+              )}
+              {tier.originalPrice && (
+                <p className="font-mono text-sm line-through text-[var(--color-ink-faint)] mb-1">
+                  {tier.originalPrice}
+                </p>
+              )}
+              <p className={['font-serif text-4xl mb-1', tier.eventNote ? 'text-red-500' : ''].join(' ')}>
+                {tier.price}
+              </p>
               <p
                 className={[
                   'font-mono text-[10px] mb-8',
