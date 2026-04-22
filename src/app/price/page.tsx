@@ -166,10 +166,10 @@ export default function PricePage() {
           <div className="flex items-baseline gap-8">
             <span className="font-mono text-[10px] tracking-widest uppercase text-faint w-16">Email</span>
             <a
-              href="mailto:studio.zorba.contact@gmail.com"
+              href="mailto:rooviz-contact@naver.com"
               className="font-mono text-sm text-ink hover:text-muted transition-colors duration-200"
             >
-              studio.zorba.contact@gmail.com
+              rooviz-contact@naver.com
             </a>
           </div>
         </ScrollReveal>
