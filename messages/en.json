@@ -64,6 +64,22 @@
         "name": "PREMIUM",
         "items": ["20+ pages", "Fully bespoke build", "Enterprise scale", "Timeline on request"]
       }
+    },
+    "checkout": {
+      "button": "Proceed to checkout",
+      "loading": "Redirecting…"
+    },
+    "success": {
+      "label": "Thank you",
+      "heading": "Your order has been received.",
+      "body": "We will reach out within one business day to begin the project. A receipt has been sent to your email.",
+      "back": "Back to home"
+    },
+    "canceled": {
+      "label": "Canceled",
+      "heading": "Checkout was canceled.",
+      "body": "No charge was made. You can return to the pricing page whenever you're ready.",
+      "back": "Back to pricing"
     }
   },
   "footer": {

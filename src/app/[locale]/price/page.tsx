@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server'
 import { useLocale, useTranslations } from 'next-intl'
 import PageTransition from '@/components/ui/PageTransition'
 import ScrollReveal from '@/components/ui/ScrollReveal'
+import CheckoutButton from '@/components/price/CheckoutButton'
 
 const OPEN_EVENT_SLOTS = { total: 10, remaining: 9 }
 
@@ -135,6 +136,8 @@ export default function PricePage({
                     </li>
                   ))}
                 </ul>
+
+                {currentLocale === 'en' && <CheckoutButton tier={tier.key} />}
               </ScrollReveal>
             )
           })}
@@ -153,10 +156,10 @@ export default function PricePage({
               {tc('email')}
             </span>
             <a
-              href="mailto:rooviz-contact@naver.com"
+              href="mailto:contact@roovizstudio.com"
               className="font-mono text-sm text-ink hover:text-muted transition-colors duration-200"
             >
-              rooviz-contact@naver.com
+              contact@roovizstudio.com
             </a>
           </div>
         </ScrollReveal>

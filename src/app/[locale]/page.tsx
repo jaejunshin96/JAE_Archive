@@ -42,10 +42,10 @@ export default function HomePage({
                 {t('email')}
               </span>
               <a
-                href="mailto:rooviz-contact@naver.com"
+                href="mailto:contact@roovizstudio.com"
                 className="font-mono text-xs text-ink hover:text-muted transition-colors duration-200"
               >
-                rooviz-contact@naver.com
+                contact@roovizstudio.com
               </a>
             </div>
           </div>
