@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useLocale } from 'next-intl'
 import { Work } from '@/types'
 import WorkCard from '@/components/works/WorkCard'
 
@@ -9,10 +10,13 @@ interface Props {
 }
 
 export default function WorksGrid({ works }: Props) {
+  const locale = useLocale() as 'ko' | 'en' | 'ja'
+
   return (
     <div className="flex flex-col gap-y-24 md:gap-y-32">
       {works.map((work, i) => {
         const isRight = i % 2 === 1
+        const desc = work.description[locale] ?? work.description.ko
 
         return (
           <motion.div
@@ -26,7 +30,7 @@ export default function WorksGrid({ works }: Props) {
             {isRight && (
               <div className="hidden md:flex flex-col justify-center flex-1 text-right pr-4">
                 <p className="font-mono text-[11px] text-muted leading-relaxed mb-3 [word-break:keep-all]">
-                  {work.description.ko}
+                  {desc}
                 </p>
                 <span className="font-mono text-[10px] text-faint tracking-widest">
                   {[String(work.year), ...(work.keywords ?? [])].join(' · ')}
@@ -42,7 +46,7 @@ export default function WorksGrid({ works }: Props) {
             >
               <WorkCard work={work} />
               <p className="md:hidden mt-3 font-mono text-[11px] text-muted leading-relaxed [word-break:keep-all]">
-                {work.description.ko}
+                {desc}
               </p>
               {work.keywords && (
                 <span className="md:hidden mt-2 block font-mono text-[10px] text-faint tracking-widest">
@@ -54,7 +58,7 @@ export default function WorksGrid({ works }: Props) {
             {!isRight && (
               <div className="hidden md:flex flex-col justify-center flex-1 pl-4">
                 <p className="font-mono text-[11px] text-muted leading-relaxed mb-3 [word-break:keep-all]">
-                  {work.description.ko}
+                  {desc}
                 </p>
                 <span className="font-mono text-[10px] text-faint tracking-widest">
                   {[String(work.year), ...(work.keywords ?? [])].join(' · ')}

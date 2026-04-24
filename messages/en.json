@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Rooviz — Visual Archive",
+    "description": "A web design & development studio translating brand nuance into digital language."
+  },
+  "nav": {
+    "price": "Price"
+  },
+  "hero": {
+    "title": "ROOVIZ ARCHIVE",
+    "subtitle": "Digital perspectives, built — 2021–present"
+  },
+  "works": {
+    "label": "Selected Works"
+  },
+  "process": {
+    "label": "Process",
+    "heading": "Four steps, one thread",
+    "steps": [
+      { "num": "01", "title": "Discover", "desc": "A brief interview to grasp the grain of the brand." },
+      { "num": "02", "title": "Design", "desc": "Structure shaped by typography and whitespace." },
+      { "num": "03", "title": "Develop", "desc": "Built on Next.js for performance and longevity." },
+      { "num": "04", "title": "Deliver", "desc": "Operational guidance that continues after launch." }
+    ]
+  },
+  "clients": {
+    "label": "Trusted By",
+    "heading": "Brands we've worked with",
+    "testimonials": [
+      {
+        "quote": "They translated our complex requirements into a clear language. We've kept trusting them well past delivery.",
+        "author": "Jangahn Tower",
+        "role": "CEO"
+      },
+      {
+        "quote": "The visual language and flow gave our service a quiet, solid sense of trust.",
+        "author": "Worholpass",
+        "role": "Founder"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Inquiries",
+    "tel": "Tel",
+    "email": "Email",
+    "business": "SHIN & CO · Jaejun Shin · 404-64-00558 · Reg. 2026-Daegu-Dalseo-0427 · 83 Igokgongwon-ro, Daegu, Korea"
+  },
+  "price": {
+    "label": "Price",
+    "heading": "Website production pricing",
+    "subheading": "Every project is scoped and scheduled after an initial consultation.",
+    "from": "from",
+    "eventNote": "Opening Event · first 10",
+    "tiers": {
+      "basic": {
+        "name": "BASIC",
+        "items": ["1–5 pages", "Landing · menu level", "Responsive design", "~4 days delivery"]
+      },
+      "standard": {
+        "name": "STANDARD",
+        "items": ["Up to 10 pages", "About · directions", "Services · products", "~1 week delivery"]
+      },
+      "premium": {
+        "name": "PREMIUM",
+        "items": ["20+ pages", "Fully bespoke build", "Enterprise scale", "Timeline on request"]
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

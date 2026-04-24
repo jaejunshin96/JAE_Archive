@@ -8,7 +8,7 @@ export interface Work {
   category: WorkCategory
   coverImage: string
   images: string[]
-  description: { ko: string; en: string }
+  description: { ko: string; en: string; ja: string }
   sample?: boolean
   aspectRatio: 'square' | 'portrait' | 'landscape'
   gridSize: 'narrow' | 'wide' | 'full'

@@ -17,6 +17,7 @@ export const works: Work[] = [
     description: {
       ko: '타워크레인·리프트 전문 기업 브랜드 사이트. 중장비의 무게감과 신뢰를 시각 언어로 번역했다.',
       en: 'Corporate site for a tower crane and lift specialist. Translating the weight and reliability of heavy machinery into visual language.',
+      ja: 'タワークレーン・リフト専門企業のブランドサイト。重機の重みと信頼を視覚言語へ翻訳した。',
     },
     aspectRatio: 'landscape',
     gridSize: 'wide',
@@ -37,6 +38,7 @@ export const works: Work[] = [
     description: {
       ko: '워킹홀리데이 비자 대행 서비스 플랫폼. 복잡한 절차를 단순하고 명확한 흐름으로 정리했다.',
       en: 'A working holiday visa service platform. Simplifying a complex process into a clear, navigable flow.',
+      ja: 'ワーキングホリデービザ代行サービスのプラットフォーム。複雑な手続きを明確な流れへと整理した。',
     },
     aspectRatio: 'landscape',
     gridSize: 'narrow',
@@ -60,6 +62,7 @@ export const works: Work[] = [
     description: {
       ko: '명상 스튜디오 브랜드 사이트. 고요함을 레이아웃과 여백으로 구현했다.',
       en: 'A meditation studio brand site. Stillness expressed through layout and negative space.',
+      ja: '瞑想スタジオのブランドサイト。静けさをレイアウトと余白で表現した。',
     },
     sample: true,
     aspectRatio: 'landscape',
@@ -82,6 +85,7 @@ export const works: Work[] = [
     description: {
       ko: '장인 베이커리 웹사이트. 제품의 질감과 온도를 화면으로 옮겼다.',
       en: 'An artisan bakery website. Translating the texture and warmth of craft bread to screen.',
+      ja: '職人ベーカリーのウェブサイト。素材の質感と温もりを画面へと運んだ。',
     },
     sample: true,
     aspectRatio: 'landscape',
@@ -104,6 +108,7 @@ export const works: Work[] = [
     description: {
       ko: '웹 디자인 에이전시 포트폴리오 사이트. 어두운 팔레트로 브랜드의 세계관을 구축했다.',
       en: 'A web design agency portfolio. Building a brand world through a dark, controlled palette.',
+      ja: 'ウェブデザインエージェンシーのポートフォリオサイト。ダークなパレットでブランドの世界観を築いた。',
     },
     sample: true,
     aspectRatio: 'landscape',

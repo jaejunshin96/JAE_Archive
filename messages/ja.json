@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Rooviz — Visual Archive",
+    "description": "ブランドの質感をデジタルの言語へと翻訳するウェブデザイン・開発スタジオ。"
+  },
+  "nav": {
+    "price": "Price"
+  },
+  "hero": {
+    "title": "ROOVIZ ARCHIVE",
+    "subtitle": "かたちにしたデジタルの視点 — 2021–現在"
+  },
+  "works": {
+    "label": "Selected Works"
+  },
+  "process": {
+    "label": "Process",
+    "heading": "四つの段階、ひとつの流れ",
+    "steps": [
+      { "num": "01", "title": "Discover", "desc": "短いインタビューでブランドの肌理を捉えます。" },
+      { "num": "02", "title": "Design", "desc": "タイポグラフィと余白で構造を形づくります。" },
+      { "num": "03", "title": "Develop", "desc": "Next.js を基盤に性能と保守性を担保します。" },
+      { "num": "04", "title": "Deliver", "desc": "公開後の運用まで続くガイドを提供します。" }
+    ]
+  },
+  "clients": {
+    "label": "Trusted By",
+    "heading": "ご一緒したブランド",
+    "testimonials": [
+      {
+        "quote": "複雑な要件を静かな言語へ整理してくれました。納品後も安心して任せています。",
+        "author": "Jangahn Tower",
+        "role": "代表"
+      },
+      {
+        "quote": "視覚言語と導線が、サービスに静かで確かな信頼を与えてくれました。",
+        "author": "Worholpass",
+        "role": "Founder"
+      }
+    ]
+  },
+  "contact": {
+    "label": "お問い合わせ",
+    "tel": "Tel",
+    "email": "Email",
+    "business": "SHIN & CO · Jaejun Shin · 404-64-00558 · 登録番号 2026-Daegu-Dalseo-0427 · 大邱広域市 イゴク公園路 83"
+  },
+  "price": {
+    "label": "Price",
+    "heading": "ウェブサイト制作費用",
+    "subheading": "すべてのプロジェクトは事前相談のうえで費用と日程を確定します。",
+    "from": "〜から",
+    "eventNote": "オープン記念 · 先着10社",
+    "tiers": {
+      "basic": {
+        "name": "BASIC",
+        "items": ["1〜5ページ構成", "ランディング・メニュー相当", "レスポンシブ対応", "納期 約4日"]
+      },
+      "standard": {
+        "name": "STANDARD",
+        "items": ["〜10ページ構成", "ごあいさつ・アクセス", "サービス・製品紹介", "納期 約1週間"]
+      },
+      "premium": {
+        "name": "PREMIUM",
+        "items": ["20ページ以上", "完全オーダーメイド", "企業規模プロジェクト", "納期は個別相談"]
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

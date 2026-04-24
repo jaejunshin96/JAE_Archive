@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Rooviz — Visual Archive",
+    "description": "웹 디자인과 개발 스튜디오. 브랜드의 결을 디지털 언어로 옮깁니다."
+  },
+  "nav": {
+    "price": "Price"
+  },
+  "hero": {
+    "title": "ROOVIZ ARCHIVE",
+    "subtitle": "구현된 디지털 시선 — 2021–현재"
+  },
+  "works": {
+    "label": "Selected Works"
+  },
+  "process": {
+    "label": "Process",
+    "heading": "네 단계로 이어지는 제작 흐름",
+    "steps": [
+      { "num": "01", "title": "Discover", "desc": "간결한 인터뷰로 브랜드의 결을 파악합니다." },
+      { "num": "02", "title": "Design", "desc": "타이포그래피와 여백으로 구조를 빚습니다." },
+      { "num": "03", "title": "Develop", "desc": "Next.js 기반으로 성능과 유지보수를 담보합니다." },
+      { "num": "04", "title": "Deliver", "desc": "배포 이후에도 이어지는 운영 가이드를 제공합니다." }
+    ]
+  },
+  "clients": {
+    "label": "Trusted By",
+    "heading": "함께한 브랜드",
+    "testimonials": [
+      {
+        "quote": "복잡한 요구를 단순한 언어로 정리해 주었습니다. 배포 이후에도 안심하고 맡기고 있습니다.",
+        "author": "장안건설기계",
+        "role": "대표"
+      },
+      {
+        "quote": "시각 언어와 흐름이 우리 서비스의 신뢰를 단단하게 만들었습니다.",
+        "author": "Worholpass",
+        "role": "Founder"
+      }
+    ]
+  },
+  "contact": {
+    "label": "문의 및 상담",
+    "tel": "Tel",
+    "email": "Email",
+    "business": "SHIN & CO · 신재준 · 404-64-00558 · 제2026-대구달서-0427호 · 대구광역시 이곡공원로 83"
+  },
+  "price": {
+    "label": "Price",
+    "heading": "웹사이트 제작 비용",
+    "subheading": "모든 프로젝트는 사전 상담 후 가격과 일정을 확정합니다.",
+    "from": "~부터",
+    "eventNote": "오픈 이벤트 · 선착순 10개",
+    "tiers": {
+      "basic": {
+        "name": "BASIC",
+        "items": ["1~5페이지 구성", "랜딩 · 메뉴판 수준", "반응형 디자인", "납기 약 4일"]
+      },
+      "standard": {
+        "name": "STANDARD",
+        "items": ["~10페이지 구성", "인사말 · 오시는 길", "서비스 · 제품 소개", "납기 약 1주"]
+      },
+      "premium": {
+        "name": "PREMIUM",
+        "items": ["20페이지 이상", "완전 맞춤형 제작", "기업 규모 프로젝트", "납기 별도 협의"]
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

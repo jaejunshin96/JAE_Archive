@@ -1,14 +1,16 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { motion, useScroll, useTransform, useMotionTemplate } from 'framer-motion'
+import { useTranslations } from 'next-intl'
+import { Link, usePathname } from '@/i18n/navigation'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Nav() {
   const { scrollY } = useScroll()
   const bgOpacity = useTransform(scrollY, [0, 80], [0, 0.92])
   const bgColor = useMotionTemplate`rgba(245, 244, 241, ${bgOpacity})`
   const pathname = usePathname()
+  const t = useTranslations('nav')
 
   return (
     <motion.header
@@ -22,17 +24,20 @@ export default function Nav() {
         >
           ROOVIZ
         </Link>
-        <Link
-          href="/price"
-          className={[
-            'font-mono text-[10px] tracking-widest uppercase transition-colors duration-200',
-            pathname === '/price'
-              ? 'text-[var(--color-ink)]'
-              : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]',
-          ].join(' ')}
-        >
-          Price
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/price"
+            className={[
+              'font-mono text-[10px] tracking-widest uppercase transition-colors duration-200',
+              pathname === '/price'
+                ? 'text-[var(--color-ink)]'
+                : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]',
+            ].join(' ')}
+          >
+            {t('price')}
+          </Link>
+          <LanguageSwitcher />
+        </div>
       </nav>
     </motion.header>
   )
