@@ -30,6 +30,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ url: session.url })
   } catch (err) {
+    console.error('[checkout] error:', err)
     const message = err instanceof Error ? err.message : 'Checkout error'
     return NextResponse.json({ error: message }, { status: 500 })
   }
