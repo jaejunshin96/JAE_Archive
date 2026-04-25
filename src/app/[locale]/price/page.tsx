@@ -28,6 +28,12 @@ const PRICES: Record<TierKey, Record<Currency, { price: string; originalPrice?: 
   },
 }
 
+const PAYMENT_LINKS: Record<TierKey, string> = {
+  basic: 'https://buy.stripe.com/6oU14hfZYgGW62O7dx9EI00',
+  standard: 'https://buy.stripe.com/3cIeV7eVU62i4YK8hB9EI01',
+  premium: 'https://buy.stripe.com/eVqdR38xw3Uabn89lF9EI02',
+}
+
 const TIER_META: { key: TierKey; hasEvent?: boolean }[] = [
   { key: 'basic', hasEvent: true },
   { key: 'standard' },
@@ -137,7 +143,7 @@ export default function PricePage({
                   ))}
                 </ul>
 
-                {currentLocale === 'en' && <CheckoutButton tier={tier.key} />}
+                {currentLocale === 'en' && <CheckoutButton href={PAYMENT_LINKS[tier.key]} />}
               </ScrollReveal>
             )
           })}
