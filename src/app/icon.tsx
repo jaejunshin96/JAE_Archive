@@ -1,13 +1,17 @@
 import { ImageResponse } from 'next/og'
 
-export const size = { width: 32, height: 32 }
+export const size = { width: 512, height: 512 }
 export const contentType = 'image/png'
 
-export default function Icon() {
+export default async function Icon() {
+  const font = await fetch(
+    new URL('https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xRbPQ.woff2')
+  ).then((res) => res.arrayBuffer())
+
   return new ImageResponse(
     <div
       style={{
-        background: '#1A1917',
+        background: '#FFFFFF',
         width: '100%',
         height: '100%',
         display: 'flex',
@@ -15,26 +19,27 @@ export default function Icon() {
         justifyContent: 'center',
       }}
     >
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        style={{
+          fontFamily: 'Playfair Display',
+          fontWeight: 700,
+          fontSize: 96,
+          color: '#000000',
+          letterSpacing: '-2px',
+        }}
       >
-        {/* 눈 외곽선 */}
-        <path
-          d="M2 12C2 12 5.5 5 12 5C18.5 5 22 12 22 12C22 12 18.5 19 12 19C5.5 19 2 12 2 12Z"
-          stroke="#F5F4F1"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-        />
-        {/* 동공 */}
-        <circle cx="12" cy="12" r="3" fill="#F5F4F1" />
-      </svg>
+        ROOVIZ
+      </span>
     </div>,
-    { ...size }
+    {
+      ...size,
+      fonts: [
+        {
+          name: 'Playfair Display',
+          data: font,
+          weight: 700,
+        },
+      ],
+    }
   )
 }
