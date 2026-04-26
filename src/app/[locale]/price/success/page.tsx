@@ -4,6 +4,9 @@ import { setRequestLocale } from 'next-intl/server'
 import { useTranslations } from 'next-intl'
 import PageTransition from '@/components/ui/PageTransition'
 import ScrollReveal from '@/components/ui/ScrollReveal'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = { robots: { index: false, follow: false } }
 
 export default function CheckoutSuccessPage({
   params,
