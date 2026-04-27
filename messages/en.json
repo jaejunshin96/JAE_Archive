@@ -4,7 +4,29 @@
     "description": "A web design & development studio translating brand nuance into digital language."
   },
   "nav": {
-    "price": "Price"
+    "price": "Price",
+    "about": "About"
+  },
+  "about": {
+    "metaTitle": "About — Studio",
+    "metaDescription": "Rooviz is a one-person web design and development studio translating brand nuance into digital language. We craft corporate sites, brand sites, and portfolios.",
+    "label": "About",
+    "heading": "Brand nuance, in digital language",
+    "intro": "Rooviz is a web design and development studio run by a single pair of hands and eyes. We translate the grain of a brand into form, structure, and motion — creating digital experiences free of excess.",
+    "philosophyHeading": "Philosophy",
+    "philosophy": "We focus on subtraction over addition. Trust is built through proportion, white space, and typography — not ornamentation. Every interaction should flow softly. Every word should sit where it belongs.",
+    "servicesHeading": "Services",
+    "services": [
+      { "title": "Corporate & brand websites", "desc": "Full-stack corporate sites covering company profiles, product lineups, and careers pages." },
+      { "title": "Portfolios & archives", "desc": "Image-led portfolio sites for artists, designers, and studios." },
+      { "title": "Renewals & rebrands", "desc": "Re-defining structure and visual language for existing sites — lifting search visibility and conversion together." }
+    ],
+    "stackHeading": "Stack",
+    "stack": "Next.js · React · TypeScript · Tailwind CSS · Framer Motion · GSAP · Vercel · Stripe. Every site ships with fast loading, SEO-friendly structure, and mobile-first design as defaults.",
+    "processHeading": "Process",
+    "process": "Begins with a brief interview, then follows four stages — Discover · Design · Develop · Deliver — in one continuous breath. Most sites go live within four to eight weeks.",
+    "ctaHeading": "Working together",
+    "cta": "Project inquiries or simple questions, both welcome. Reach out by email — we reply within one business day."
   },
   "hero": {
     "title": "ROOVIZ ARCHIVE",

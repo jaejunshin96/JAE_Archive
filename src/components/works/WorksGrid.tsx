@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useLocale } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { Work } from '@/types'
 import WorkCard from '@/components/works/WorkCard'
 
@@ -38,10 +39,8 @@ export default function WorksGrid({ works }: Props) {
               </div>
             )}
 
-            <a
-              href={work.url}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={`/works/${work.slug}`}
               className="block w-full md:w-[62%] shrink-0"
             >
               <WorkCard work={work} />
@@ -53,7 +52,7 @@ export default function WorksGrid({ works }: Props) {
                   {[String(work.year), ...work.keywords].join(' · ')}
                 </span>
               )}
-            </a>
+            </Link>
 
             {!isRight && (
               <div className="hidden md:flex flex-col justify-center flex-1 pl-4">

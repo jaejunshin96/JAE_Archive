@@ -1,17 +1,19 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { Link } from '@/i18n/navigation'
 import { Work } from '@/types'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 interface Props {
   work: Work
+  locale?: 'ko' | 'en' | 'ja'
 }
 
 
-export default function WorkDetail({ work }: Props) {
+export default function WorkDetail({ work, locale = 'ko' }: Props) {
+  const description = work.description[locale] ?? work.description.ko
   const allImages = [work.coverImage, ...work.images]
 
   return (
@@ -38,8 +40,13 @@ export default function WorkDetail({ work }: Props) {
             {work.title}
           </h1>
           <p className="font-mono text-sm text-muted leading-relaxed">
-            {work.description.ko}
+            {description}
           </p>
+          {work.keywords && work.keywords.length > 0 && (
+            <p className="mt-4 font-mono text-[10px] text-faint tracking-widest uppercase">
+              {work.keywords.join(' · ')}
+            </p>
+          )}
           {work.url && (
             <a
               href={work.url}

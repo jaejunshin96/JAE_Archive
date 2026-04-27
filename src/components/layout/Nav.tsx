@@ -26,6 +26,17 @@ export default function Nav() {
         </Link>
         <div className="flex items-center gap-6">
           <Link
+            href="/about"
+            className={[
+              'font-mono text-[10px] tracking-widest uppercase transition-colors duration-200',
+              pathname === '/about'
+                ? 'text-[var(--color-ink)]'
+                : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]',
+            ].join(' ')}
+          >
+            {t('about')}
+          </Link>
+          <Link
             href="/price"
             className={[
               'font-mono text-[10px] tracking-widest uppercase transition-colors duration-200',
